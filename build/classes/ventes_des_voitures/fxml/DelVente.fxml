@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDialogLayout?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="ventes_des_voitures.controller.DelVenteController">
+   <children>
+      <JFXDialogLayout fx:id="content" style="-fx-background-color: #d7534e;" />
+      <StackPane fx:id="loginStackPane" prefHeight="410.0" prefWidth="610.0">
+         <children>
+            <GridPane prefHeight="400.0" prefWidth="600.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="129.0" minHeight="7.0" prefHeight="71.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="367.0" minHeight="10.0" prefHeight="307.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="74.0" minHeight="0.0" prefHeight="21.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <AnchorPane prefHeight="292.0" prefWidth="600.0" style="-fx-background-color: #FFFFFF;" stylesheets="@../CSS/login.css" GridPane.rowIndex="1">
+                     <children>
+                        <MaterialDesignIconView fill="#d7534e" glyphName="DELETE" layoutX="26.0" layoutY="208.0" size="150" wrappingWidth="149.99999600299634" />
+                        <AnchorPane layoutX="185.0" layoutY="5.0" prefHeight="297.0" prefWidth="406.0" stylesheets="@../CSS/login.css">
+                           <children>
+                              <Pane fx:id="signUpPane" prefHeight="297.0" prefWidth="406.0" style="-fx-background-color: white;" stylesheets="@../CSS/login.css">
+                                 <children>
+                                    <HBox layoutX="94.0" layoutY="255.0" prefHeight="28.0" prefWidth="210.0">
+                                       <children>
+                                          <JFXButton fx:id="OKadd" defaultButton="true" onAction="#handleButtonAction" prefHeight="28.0" prefWidth="110.0" stylesheets="@../CSS/voiture.css" text="Supprimer">
+                                             <graphic>
+                                                <MaterialDesignIconView glyphName="CHECK" size="18" />
+                                             </graphic>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                             <HBox.margin>
+                                                <Insets right="5.0" />
+                                             </HBox.margin>
+                                          </JFXButton>
+                                          <JFXButton fx:id="canceladd" onAction="#handleButtonAction" prefHeight="28.0" prefWidth="110.0" stylesheets="@../CSS/voiture.css" text="Cancel">
+                                             <graphic>
+                                                <MaterialDesignIconView glyphName="CLOSE" size="18" />
+                                             </graphic>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                             <padding>
+                                                <Insets right="5.0" />
+                                             </padding>
+                                          </JFXButton>
+                                       </children>
+                                    </HBox>
+                                    <Line endX="270.0" layoutX="114.0" layoutY="54.0" startX="-100.0" />
+                                    <Label alignment="CENTER" layoutX="2.0" prefHeight="53.0" prefWidth="406.0" text="Supprimer Voiture" textFill="#ababab">
+                                       <font>
+                                          <Font size="36.0" />
+                                       </font>
+                                       <graphic>
+                                          <FontAwesomeIconView fill="#ababab" glyphName="TRASH_ALT" size="40" />
+                                       </graphic>
+                                    </Label>
+                                    <Line endX="271.0" layoutX="113.0" layoutY="242.0" startX="-100.0" />
+                                    <Label alignment="CENTER" layoutX="13.0" layoutY="65.0" prefHeight="24.0" prefWidth="371.0" text="Voulez-vous vraiment suprimer le produit suivant ????">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <GridPane layoutX="14.0" layoutY="100.0" prefHeight="126.0" prefWidth="372.0">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <Pane prefHeight="200.0" prefWidth="200.0">
+                                             <children>
+                                                <Label fx:id="DeleteNumClient" alignment="CENTER" contentDisplay="CENTER" layoutX="95.0" prefHeight="63.0" prefWidth="92.0" textAlignment="CENTER" textFill="RED" wrapText="true">
+                                                   <font>
+                                                      <Font name="System Bold" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="3.0" prefHeight="63.0" prefWidth="92.0" text="Num Client :" textAlignment="CENTER" wrapText="true">
+                                                   <font>
+                                                      <Font name="System Bold" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </Pane>
+                                          <Pane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+                                             <children>
+                                                <Pane>
+                                                   <children>
+                                                      <Label fx:id="DeleteQuantité" alignment="CENTER" contentDisplay="CENTER" layoutX="95.0" prefHeight="63.0" prefWidth="92.0" textAlignment="CENTER" textFill="RED" wrapText="true">
+                                                         <font>
+                                                            <Font name="System Bold" size="14.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="3.0" prefHeight="63.0" prefWidth="92.0" text="Quantité :" textAlignment="CENTER" wrapText="true">
+                                                         <font>
+                                                            <Font name="System Bold" size="14.0" />
+                                                         </font>
+                                                      </Label>
+                                                   </children>
+                                                </Pane>
+                                             </children>
+                                          </Pane>
+                                          <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+                                             <children>
+                                                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-11.0" prefHeight="63.0" prefWidth="103.0" text="Num Voiture :" textAlignment="CENTER" wrapText="true">
+                                                   <font>
+                                                      <Font name="System Bold" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="DeleteNumVoiture" alignment="CENTER" contentDisplay="CENTER" layoutX="92.0" prefHeight="63.0" prefWidth="92.0" textAlignment="CENTER" textFill="RED" wrapText="true">
+                                                   <font>
+                                                      <Font name="System Bold" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </Pane>
+                                          <Pane prefHeight="67.0" prefWidth="202.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                             <children>
+                                                <Label fx:id="DeleteDate" alignment="CENTER" contentDisplay="CENTER" layoutX="92.0" prefHeight="63.0" prefWidth="92.0" textAlignment="CENTER" textFill="RED" wrapText="true">
+                                                   <font>
+                                                      <Font name="System Bold" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="63.0" prefWidth="92.0" text="Date :" textAlignment="CENTER" wrapText="true">
+                                                   <font>
+                                                      <Font name="System Bold" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </Pane>
+                                       </children>
+                                    </GridPane>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </AnchorPane>
+                        <Line endX="7.0" endY="268.0" layoutX="178.0" layoutY="34.0" startX="7.0" startY="-32.0" stroke="#ababab" />
+                        <Line endX="-150.0" endY="-361.0" fill="#007aff" layoutX="758.0" layoutY="296.0" startX="-150.0" startY="28.5" stroke="#007aff" strokeWidth="5.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane onMouseDragged="#Dragged" onMousePressed="#Pressed" prefHeight="400.0" prefWidth="455.0" style="-fx-background-color: #007AFF;" stylesheets="@../CSS/login.css">
+                     <children>
+                        <HBox layoutX="542.0" layoutY="2.0" prefHeight="31.0" prefWidth="63.0">
+                           <children>
+                              <JFXButton fx:id="minimize" contentDisplay="GRAPHIC_ONLY" onAction="#handleButtonAction" prefHeight="28.0" prefWidth="29.0">
+                                 <graphic>
+                                    <MaterialDesignIconView fill="#fcfcfc" glyphName="WINDOW_MINIMIZE" size="18" />
+                                 </graphic>
+                              </JFXButton>
+                              <JFXButton fx:id="close" contentDisplay="GRAPHIC_ONLY" onAction="#handleButtonAction" prefHeight="28.0" prefWidth="28.0">
+                                 <graphic>
+                                    <MaterialDesignIconView fill="WHITE" glyphName="WINDOW_CLOSE" size="18" />
+                                 </graphic>
+                              </JFXButton>
+                           </children>
+                        </HBox>
+                        <Label layoutX="70.0" layoutY="2.0" prefHeight="36.0" prefWidth="128.0" text="Gestion" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                           <font>
+                              <Font size="36.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="70.0" layoutY="47.0" prefHeight="17.0" prefWidth="138.0" text="des Ventes des Voitures" textFill="WHITE" />
+                        <ImageView disable="true" fitHeight="63.0" fitWidth="55.0" layoutX="8.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/G2V_Icon.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </AnchorPane>
+                  <AnchorPane onMouseDragged="#Dragged" onMousePressed="#Pressed" prefHeight="160.0" prefWidth="600.0" style="-fx-background-color: #007AFF;" stylesheets="@../CSS/login.css" GridPane.rowIndex="2">
+                     <children>
+                        <Label layoutX="9.0" layoutY="2.0" prefHeight="17.0" prefWidth="128.0" text="Projet JAVA L3 IG ENI" textAlignment="JUSTIFY" textFill="#fffdfd" wrapText="true" />
+                        <Label layoutX="482.0" layoutY="2.0" prefHeight="17.0" prefWidth="107.0" text="Copyright 2019" textFill="WHITE">
+                           <graphic>
+                              <FontAwesomeIconView fill="WHITE" glyphName="COPYRIGHT" size="15" />
+                           </graphic>
+                        </Label>
+                     </children>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </AnchorPane>
+               </children>
+            </GridPane>
+         </children>
+      </StackPane>
+      <Line endX="-150.0" endY="-361.0" fill="#007aff" layoutX="150.0" layoutY="361.0" startX="-150.0" startY="28.5" stroke="#007aff" strokeWidth="10.0" />
+   </children>
+</AnchorPane>

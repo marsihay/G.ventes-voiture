@@ -1,0 +1,57 @@
+
+#close:hover
+{
+-fx-background-color : #E81123;
+}
+#minimize:hover
+{
+-fx-background-color : #ABABAB ;
+}
+#okbtn
+{
+    -fx-border-style: solid;
+    -fx-border-color: #4DCA5E ;
+    -fx-border-radius: 5px;
+}
+#okbtn:hover
+{
+-fx-background-color : #4DCA5E ;
+-fx-text-fill:  white;
+-fx-fill:  white;
+}
+#OkBtnSign
+{
+    -fx-border-style: solid;
+    -fx-border-color: #4DCA5E ;
+    -fx-border-radius: 5px;
+}
+#OkBtnSign:hover
+{
+-fx-background-color : #4DCA5E ;
+-fx-text-fill:  white;
+-fx-fill:  white;
+}
+#resetbtn
+{
+    -fx-border-style: solid;
+    -fx-border-color: dodgerblue ;
+    -fx-border-radius: 5px;
+}
+#resetbtn:hover
+{
+-fx-background-color : dodgerblue ;
+-fx-text-fill:  white;
+-fx-fill:  white;
+}
+#cancelbtn
+{
+    -fx-border-style: solid;
+    -fx-border-color: red ;
+    -fx-border-radius: 5px;
+}
+#cancelbtn:hover
+{
+-fx-background-color : red ;
+-fx-text-fill:  white;
+-fx-fill:  white;
+}

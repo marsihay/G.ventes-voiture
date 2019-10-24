@@ -1,0 +1,191 @@
+
+.table-view .column-header,
+.table-view .column-header-background .filler {
+    -fx-cell-size : 20;
+    -fx-background-color:   #2D75E8;
+}
+.table-view .column-header .label{
+
+   -fx-text-fill: white;
+   -fx-font-weight: bold;
+   -fx-alignment: CENTER;
+}
+.table-view .cell{
+   -fx-cell-size: 30;
+  -fx-alignment: center-left;
+  -fx-text-fill: #000000;
+  -fx-alignment: CENTER_LEFT;
+}
+
+.table-row-cell:selected {
+    -fx-background-color:  rgb(127, 172, 243);
+ }
+ .table-row-cell:selected .text {
+        -fx-fill : white ;
+        -fx-text-fill : white ;
+ 
+ }
+/* scroll bar starts here */
+
+/* The increment and decrement button CSS class of scrollbar */
+.table-view .increment-button ,.table-view .decrement-button {
+    -fx-background-color:transparent;
+	-fx-background-radius: 2em;
+
+}
+
+/* The main scrollbar **track** CSS class  */
+.table-view .scroll-bar:horizontal .track,
+.table-view .scroll-bar:vertical .track{
+	-fx-background-color: transparent;
+	-fx-border-color:derive(  #2D75E8,80%);
+	-fx-background-radius: 2em;
+	-fx-border-radius:2em;
+}
+
+/* The main scrollbar **thumb** CSS class which we drag every time (movable) */
+.table-view .scroll-bar:horizontal .thumb,
+.table-view .scroll-bar:vertical .thumb {
+    -fx-background-color:derive( #2D75E8,90%);
+	-fx-background-insets: 2, 0, 0;
+	-fx-background-radius: 2em;
+
+}
+
+/*buttoun add edit del*/
+
+#addVoiture
+{
+    -fx-border-style: solid;
+    
+    -fx-border-radius: 2em;
+    -fx-background-radius: 2em ;
+}
+#addVoiture:hover
+{
+-fx-background-color : #4DCA5E ;
+    -fx-border-radius: 2em;
+    -fx-border-color: black ;
+-fx-background-radius: 2em ;
+-fx-text-fill:  white;
+-fx-fill:  white;
+}
+#editVoiture
+{
+    -fx-border-style: solid;
+    -fx-border-radius: 2em;
+    -fx-background-radius: 2em ;
+}
+#editVoiture:hover
+{
+-fx-background-color :  #EEAC4C ;
+    -fx-border-radius: 2em;
+-fx-background-radius: 2em ;
+-fx-text-fill:  white;
+-fx-fill:  white;
+}
+#delVoiture
+{
+    -fx-border-style: solid;
+    -fx-border-radius: 2em;
+    -fx-background-radius: 2em ;
+}
+#delVoiture:hover
+{
+-fx-background-color :  #D7534E ;
+    -fx-border-radius: 2em;
+-fx-background-radius: 2em ;
+-fx-text-fill:  white;
+-fx-fill:  white;
+}
+
+/* boutton pour le Client Tab*/
+#addClient
+{
+    -fx-border-style: solid;
+    
+    -fx-border-radius: 2em;
+    -fx-background-radius: 2em ;
+}
+#addClient:hover
+{
+-fx-background-color : #4DCA5E ;
+    -fx-border-radius: 2em;
+    -fx-border-color: black ;
+-fx-background-radius: 2em ;
+-fx-text-fill:  white;
+-fx-fill:  white;
+}
+#editClient
+{
+    -fx-border-style: solid;
+    -fx-border-radius: 2em;
+    -fx-background-radius: 2em ;
+}
+#editClient:hover
+{
+-fx-background-color :  #EEAC4C ;
+    -fx-border-radius: 2em;
+-fx-background-radius: 2em ;
+-fx-text-fill:  white;
+-fx-fill:  white;
+}
+#delClient
+{
+    -fx-border-style: solid;
+    -fx-border-radius: 2em;
+    -fx-background-radius: 2em ;
+}
+#delClient:hover
+{
+-fx-background-color :  #D7534E ;
+    -fx-border-radius: 2em;
+-fx-background-radius: 2em ;
+-fx-text-fill:  white;
+-fx-fill:  white;
+}
+
+/* boutton pour le Vente Tab*/
+#addVente
+{
+    -fx-border-style: solid;
+    
+    -fx-border-radius: 2em;
+    -fx-background-radius: 2em ;
+}
+#addVente:hover
+{
+-fx-background-color : #4DCA5E ;
+    -fx-border-radius: 2em;
+    -fx-border-color: black ;
+-fx-background-radius: 2em ;
+-fx-fill:  white;
+}
+#editVente
+{
+    -fx-border-style: solid;
+    -fx-border-radius: 2em;
+    -fx-background-radius: 2em ;
+}
+#editVente:hover
+{
+-fx-background-color :  #EEAC4C ;
+    -fx-border-radius: 2em;
+-fx-background-radius: 2em ;
+-fx-text-fill:  white;
+-fx-fill:  white;
+}
+#delVente
+{
+    -fx-border-style: solid;
+    -fx-border-radius: 2em;
+    -fx-background-radius: 2em ;
+}
+#delVente:hover
+{
+-fx-background-color :  #D7534E ;
+    -fx-border-radius: 2em;
+-fx-background-radius: 2em ;
+-fx-text-fill:  white;
+-fx-fill:  white;
+}

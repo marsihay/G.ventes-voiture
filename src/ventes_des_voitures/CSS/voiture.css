@@ -1,0 +1,40 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+#OKadd
+{
+    -fx-border-style: solid;
+    -fx-border-color: #4DCA5E ;
+    -fx-border-radius: 5px;
+}
+#OKadd:hover
+{
+-fx-background-color : #4DCA5E ;
+-fx-text-fill:  white;
+-fx-fill:  white;
+}
+#resetadd
+{
+    -fx-border-style: solid;
+    -fx-border-color: dodgerblue ;
+    -fx-border-radius: 5px;
+}
+#resetadd:hover
+{
+-fx-background-color : dodgerblue ;
+-fx-text-fill:  white;
+-fx-fill:  white;
+}
+#canceladd
+{
+    -fx-border-style: solid;
+    -fx-border-color: red ;
+    -fx-border-radius: 5px;
+}
+#canceladd:hover
+{
+-fx-background-color : red ;
+-fx-text-fill:  white;
+-fx-fill:  white;
+}

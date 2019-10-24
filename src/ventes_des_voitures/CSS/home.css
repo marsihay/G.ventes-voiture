@@ -1,0 +1,174 @@
+#close:hover
+{
+-fx-background-color : #E81123;
+}
+#logout
+{
+     -fx-text-fill: white;
+    -fx-border-width: 2px;
+    -fx-background-radius:100px 100px 10px 10px;
+}
+#logout:hover
+{
+    -fx-cursor: hand;
+    -fx-background-color:#E81123;
+    -fx-border-color: white;
+    -fx-border-width: 0px 0px 4px 0px;
+}
+#minimize:hover
+{
+-fx-background-color : #ABABAB ;
+}
+#accueil {
+    -fx-text-fill: white;
+    -fx-border-style: solid;
+    -fx-border-color: white ;
+    -fx-border-radius: 100px 100px 10px 10px;
+    -fx-border-width: 2px;
+    -fx-background-radius:100px 100px 10px 10px;
+}
+#accueil:hover {
+    -fx-cursor: hand;
+    -fx-background-color:#4DCA5E;
+    -fx-border-color: white;
+    -fx-border-width: 0px 0px 4px 0px;
+}
+#accueil:focused {
+    -fx-cursor: hand;
+    -fx-border-color: #4DCA5E;
+    -fx-border-width: 2px 2px 5px 2px;
+}
+#produit {
+    -fx-text-fill: white;
+    -fx-border-style: solid;
+    -fx-border-color: white ;
+    -fx-border-radius: 100px 100px 10px 10px;
+    -fx-border-width: 2px;
+    -fx-background-radius:100px 100px 10px 10px;
+}
+#produit:hover {
+    -fx-cursor: hand;
+    -fx-background-color:#4DCA5E;
+    -fx-border-color: white;
+    -fx-border-width: 0px 0px 4px 0px;
+    -fx-background-radius:100px 100px 10px 10px;
+}
+#produit:focused {
+    -fx-cursor: hand;
+    -fx-border-color: #4DCA5E;
+    -fx-border-width: 2px 2px 5px 2px;
+    -fx-background-radius:100px 100px 10px 10px;
+}
+#vente {
+    -fx-text-fill: white;
+    -fx-border-style: solid;
+    -fx-border-color: white ;
+    -fx-border-radius: 100px 100px 10px 10px;
+    -fx-border-width: 2px;
+    -fx-background-radius:100px 100px 10px 10px;
+}
+#vente:hover {
+    -fx-cursor: hand;
+    -fx-background-color:#4DCA5E;
+    -fx-border-color: white;
+    -fx-border-width: 0px 0px 4px 0px;
+    -fx-background-radius:100px 100px 10px 10px;
+}
+#vente:focused {
+    -fx-cursor: hand;
+    -fx-border-color: #4DCA5E;
+    -fx-border-width: 2px 2px 5px 2px;
+    -fx-background-radius:100px 100px 10px 10px;
+}
+#client {
+    -fx-text-fill: white;
+    -fx-border-style: solid;
+    -fx-border-color: white ;
+    -fx-border-radius: 100px 100px 10px 10px;
+    -fx-border-width: 2px;
+    -fx-background-radius:100px 100px 10px 10px;
+}
+#client:hover {
+    -fx-cursor: hand;
+    -fx-background-color:#4DCA5E;
+    -fx-border-color: white;
+    -fx-border-width: 0px 0px 4px 0px;
+    -fx-background-radius:100px 100px 10px 10px;
+}
+#client:focused {
+    -fx-cursor: hand;
+    -fx-border-color: #4DCA5E;
+    -fx-border-width: 2px 2px 5px 2px;
+    -fx-background-radius:100px 100px 10px 10px;
+}
+#bilan {
+    -fx-text-fill: white;
+    -fx-border-style: solid;
+    -fx-border-color: white ;
+    -fx-border-radius: 100px 100px 10px 10px;
+    -fx-border-width: 2px;
+    -fx-background-radius:100px 100px 10px 10px;
+}
+#bilan:hover {
+    -fx-cursor: hand;
+    -fx-background-color:#4DCA5E;
+    -fx-border-color: white;
+    -fx-border-width: 0px 0px 4px 0px;
+    -fx-background-radius:100px 100px 10px 10px;
+}
+#bilan:focused {
+    -fx-cursor: hand;
+    -fx-border-color: #4DCA5E;
+    -fx-border-width: 2px 2px 5px 2px;
+    -fx-background-radius:100px 100px 10px 10px;
+}
+
+/*CSS pour TabPane*/
+.tab-header-background{
+    -fx-background-color:white;
+}
+.tab-pane .tab-header-area .tab-header-background{
+    -fx-background-color:whitesmoke;
+    -fx-opacity: 0;
+}
+.tab-pane{
+    -fx-tab-min-width: 90px;
+    -fx-background-color:whitesmoke;
+}
+.tab{
+    -fx-background-insets: 0 1 0 1,0,0;
+    -fx-background-color:whitesmoke;
+}
+.tab-pane .tab{
+    -fx-background-color:red;
+}
+.tab-pane .tab:selected {
+    -fx-background-color:#4DCA5E;
+}
+.tab .tab-label{
+    -fx-alignment: CENTER;
+    -fx-text-fill:black;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+.tab:selected .tab-label{
+    -fx-alignment: CENTER;
+    -fx-text-fill:White;
+    -fx-background-color:#4DCA5E;
+}
+.tab-pane:top *.tab-header-area{
+    -fx-background-insets: 0, 0 0 1 0;
+    }
+#PrintBtn
+{
+    -fx-border-style: solid;
+    -fx-border-color: red ;
+    -fx-border-radius: 5px;
+}
+#PrintBtn:hover
+{
+-fx-border-color: black ;
+-fx-background-color : red ;
+-fx-text-fill:  white;
+-fx-fill:  white;
+}
